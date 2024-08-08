@@ -1,7 +1,7 @@
 package su.nightexpress.nexshop.shop.chest.listener;
 
-import net.alex9849.arm.adapters.WGRegion;
 import net.alex9849.arm.events.RestoreRegionEvent;
+import net.alex9849.inter.WGRegion;
 import org.bukkit.World;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

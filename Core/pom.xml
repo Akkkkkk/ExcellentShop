@@ -18,29 +18,10 @@
     </properties>
 
     <repositories>
-        <repository>
-            <id>sk89q-repo</id>
-            <url>https://maven.enginehub.org/repo/</url>
-        </repository>
 
         <repository>
-            <id>everything</id>
-            <url>https://repo.citizensnpcs.co/</url>
-        </repository>
-
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-
-        <repository>
-            <id>rosewood-repo</id>
-            <url>https://repo.rosewooddev.io/repository/public/</url>
-        </repository>
-
-        <repository>
-            <id>BenCodez Repo</id>
-            <url>https://nexus.bencodez.com/repository/maven-public/</url>
+            <id>techscode</id>
+            <url>https://repo.techscode.com/repository/techscode-apis/</url>
         </repository>
 
         <repository>
@@ -49,8 +30,8 @@
         </repository>
 
         <repository>
-            <id>techscode</id>
-            <url>https://repo.techscode.com/repository/techscode-apis/</url>
+            <id>maven-releases</id>
+            <url>https://repo.techscode.com/repository/maven-releases/</url>
         </repository>
 
         <repository>
@@ -64,6 +45,37 @@
         </repository>
 
 
+        <repository>
+            <id>elitemobs-repo</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+
+        <repository>
+            <id>lumine-repo</id>
+            <url>https://mvn.lumine.io/repository/maven-public/</url>
+        </repository>
+
+        <repository>
+            <id>rosewooddev-repo</id>
+            <url>https://repo.rosewooddev.io/repository/public/</url>
+        </repository>
+
+        <repository>
+            <id>mulesoft</id>
+            <url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+        </repository>
+
+
+        <repository>
+            <id>BenCodez Repo</id>
+            <url>https://nexus.bencodez.com/repository/maven-public/</url>
+        </repository>
+
+        <repository>
+            <id>jeff-releases</id>
+            <url>https://repo.jeff-media.com/public</url>
+        </repository>
+
     </repositories>
 
     <dependencies>
@@ -75,6 +87,27 @@
         </dependency>
 
         <dependency>
+            <groupId>com.sk89q.worldguard.worldguard-libs</groupId>
+            <artifactId>core</artifactId>
+            <version>7.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>su.nightexpress</groupId>
+            <artifactId>nightcore</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../lib/nightcore-2.6.3.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+         <groupId>me.clip</groupId>
+          <artifactId>placeholderapi</artifactId>
+          <version>2.11.2</version>
+         <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>com.github.angeschossen</groupId>
             <artifactId>LandsAPI</artifactId>
             <version>6.20.0</version>
@@ -82,22 +115,10 @@
         </dependency>
 
         <dependency>
-            <groupId>net.alex9849.arm</groupId>
-            <artifactId>AdvancedRegionMarket</artifactId>
-            <version>3.5.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>me.clip</groupId>
-            <artifactId>placeholderapi</artifactId>
-            <version>2.10.10</version>
+            <groupId>com.github.alex9849</groupId>
+            <artifactId>advanced-region-market</artifactId>
+            <version>3.3.5</version>
             <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.th0rgal.oraxen</groupId>
-            <artifactId>Oraxen</artifactId>
-            <version>1.155.1</version>
         </dependency>
 
         <dependency>
@@ -112,6 +133,12 @@
             <artifactId>worldguard-bukkit</artifactId>
             <version>7.0.6</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jeff_media</groupId>
+            <artifactId>MorePersistentDataTypes</artifactId>
+            <version>2.4.0</version>
         </dependency>
 
         <dependency>
@@ -141,12 +168,6 @@
             <version>2.0.29-SNAPSHOT</version>
             <type>jar</type>
             <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>me.mraxetv.beasttokens</groupId>
-            <artifactId>BeastTokens</artifactId>
-            <version>3.11.1</version>
         </dependency>
 
         <dependency>
@@ -185,15 +206,16 @@
         </dependency>
 
         <dependency>
-            <groupId>com.magmaguy.elitemobs</groupId>
+            <groupId>com.magmaguy</groupId>
             <artifactId>EliteMobs</artifactId>
-            <version>8.5.4</version>
+            <version>8.7.4-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
-            <groupId>su.nightexpress.coinsengine</groupId>
-            <artifactId>CoinsEngine</artifactId>
-            <version>2.3.3</version>
+            <groupId>su.nightexpress</groupId>
+            <artifactId>coinsengine</artifactId>
+            <version>2.2.0.1</version>
         </dependency>
 
         <dependency>

@@ -92,9 +92,6 @@ public class CurrencyManager extends AbstractManager<ShopPlugin> {
         if (Plugins.isInstalled(HookId.PLAYER_POINTS)) {
             this.loadCurrency(PlayerPointsHandler.ID, PlayerPointsHandler::new);
         }
-        if (Plugins.isInstalled(HookId.BEAST_TOKENS)) {
-            this.loadCurrency(BeastTokensHandler.ID, BeastTokensHandler::new);
-        }
         if (Plugins.isInstalled(HookId.VOTING_PLUGIN)) {
             this.loadCurrency(VotingPluginHandler.ID, VotingPluginHandler::new);
         }
