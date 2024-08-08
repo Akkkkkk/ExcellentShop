@@ -1,1 +1,1 @@
-# ExcellentShop-spigot
+# ExcellentShop
